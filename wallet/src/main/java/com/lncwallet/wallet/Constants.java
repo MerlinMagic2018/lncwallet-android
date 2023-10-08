@@ -5,7 +5,7 @@ import android.text.format.DateUtils;
 import com.lncwallet.core.coins.CoinID;
 import com.lncwallet.core.coins.CoinType;
 
-import com.lncwallet.core.coins.LightningcashMain;
+import com.lncwallet.core.coins.LightningcashrMain;
 
 import com.lncwallet.core.network.CoinAddress;
 import com.lncwallet.stratumj.ServerAddress;
@@ -88,27 +88,27 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(LightningcashMain.get(),    new ServerAddress("lightningcash-coin.com", 50001),
-                                                    new ServerAddress("lightningcash-coin.com", 50001))
+            new CoinAddress(LightningcashrMain.get(),    new ServerAddress("lightningcashr.org", 50001),
+                                                    new ServerAddress("lightningcashr.org", 50001))
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
     public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
     static {
         COINS_ICONS = new HashMap<>();
-        COINS_ICONS.put(CoinID.LIGHTNINGCASH_MAIN.getCoinType(), R.drawable.lightningcash);
+        COINS_ICONS.put(CoinID.LIGHTNINGCASHR_MAIN.getCoinType(), R.drawable.lightningcash);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
-        COINS_BLOCK_EXPLORERS.put(CoinID.LIGHTNINGCASH_MAIN.getCoinType(), "https://explorer.lightningcash-coin.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.LIGHTNINGCASHR_MAIN.getCoinType(), "https://explorer.lightningcashr.org/tx/%s");
     }
 
-    public static final CoinType DEFAULT_COIN = LightningcashMain.get();
-    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) LightningcashMain.get());
+    public static final CoinType DEFAULT_COIN = LightningcashrMain.get();
+    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) LightningcashrMain.get());
     public static final ArrayList<String> DEFAULT_TEST_COIN_IDS = Lists.newArrayList(
 
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-            LightningcashMain.get()
+            LightningcashrMain.get()
     );
 }

@@ -22,7 +22,7 @@ import java.util.Set;
  * @author John L. Jegutanis
  */
 public enum CoinID {
-    LIGHTNINGCASH_MAIN(LightningcashMain.get()),
+    LIGHTNINGCASHR_MAIN(LightningcashrMain.get()),
     ;
 
     private static List<CoinType> types;

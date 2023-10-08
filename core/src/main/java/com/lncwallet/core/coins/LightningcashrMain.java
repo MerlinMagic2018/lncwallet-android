@@ -5,9 +5,9 @@ import com.lncwallet.core.coins.families.BitFamily;
 /**
  * @author John L. Jegutanis
  */
-public class LightningcashMain extends BitFamily {
-    private LightningcashMain() {
-        id = "lightningcash.main";
+public class LightningcashrMain extends BitFamily {
+    private LightningcashrMain() {
+        id = "lightningcashr.main";
 
         addressHeader = 28;
         p2shHeader = 50;
@@ -15,9 +15,9 @@ public class LightningcashMain extends BitFamily {
         spendableCoinbaseDepth = 125;
         dumpedPrivateKeyHeader = 176;
 
-        name = "Lightningcash";
-        symbol = "LNC";
-        uriScheme = "lightningcash";
+        name = "Lightningcashr";
+        symbol = "LNCR";
+        uriScheme = "lightningcashr";
         bip44Index = 0;
         unitExponent = 8;
         feeValue = value(100000);
@@ -27,7 +27,7 @@ public class LightningcashMain extends BitFamily {
         signedMessageHeader = toBytes("Lightning Signed Message:\n");
     }
 
-    private static LightningcashMain instance = new LightningcashMain();
+    private static LightningcashrMain instance = new LightningcashrMain();
     public static synchronized CoinType get() {
         return instance;
     }
